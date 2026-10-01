@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran Academy - AI Powered IT Training & Placement</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="day03.css">
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased font-['Plus_Jakarta_Sans']">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 via-indigo-500 to-purple-500 flex items-center justify-center text-white font-extrabold text-xl shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+                    K
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-black tracking-tight gradient-text">KIRAN</span>
+                    <span class="text-[10px] tracking-widest font-semibold text-slate-400 uppercase -mt-1">ACADEMY</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#home" class="hover:text-sky-400 transition">Home</a>
+                <a href="#courses" class="hover:text-sky-400 transition">Courses</a>
+                <a href="#features" class="hover:text-sky-400 transition">AI Advantage</a>
+                <a href="#faq" class="hover:text-sky-400 transition">FAQs</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#contact" class="bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-500 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-indigo-500/25 transition hover:-translate-y-0.5">
+                    Enroll Now
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button id="mobileMenuBtn" class="md:hidden text-slate-300 hover:text-white p-2">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 py-4 space-y-3">
+            <a href="#home" class="block text-slate-300 hover:text-sky-400 font-medium">Home</a>
+            <a href="#courses" class="block text-slate-300 hover:text-sky-400 font-medium">Courses</a>
+            <a href="#features" class="block text-slate-300 hover:text-sky-400 font-medium">AI Advantage</a>
+            <a href="#faq" class="block text-slate-300 hover:text-sky-400 font-medium">FAQs</a>
+            <a href="#contact" class="block w-full text-center bg-indigo-600 text-white py-2 rounded-lg font-semibold">Enroll Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative overflow-hidden pt-12 pb-20 lg:pt-24 lg:pb-32">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <div class="inline-flex items-center space-x-2 bg-slate-900/80 border border-slate-700/60 rounded-full px-4 py-1.5 text-xs font-semibold text-sky-400 mb-6 backdrop-blur-md">
+                    <span class="flex h-2 w-2 rounded-full bg-sky-400 animate-ping"></span>
+                    <span>AI-Powered Learning Platform</span>
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                    Transform Your Career with <br>
+                    <span class="gradient-text">Next-Gen Tech Skills</span>
+                </h1>
+                <p class="text-slate-400 text-base sm:text-lg mb-8 max-w-2xl mx-auto">
+                    Kiran Academy delivers industry-aligned training, AI-driven practice platforms, and 100% placement support to jumpstart your career in IT.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#courses" class="w-full sm:w-auto bg-gradient-to-r from-sky-500 to-indigo-600 text-white px-8 py-3.5 rounded-full font-semibold text-sm hover:shadow-lg hover:shadow-sky-500/20 transition hover:-translate-y-0.5">
+                        Explore All Courses <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#contact" class="w-full sm:w-auto bg-slate-900 border border-slate-700 hover:border-slate-600 text-slate-200 px-8 py-3.5 rounded-full font-semibold text-sm transition">
+                        Book Free Counseling
+                    </a>
+                </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <div class="text-3xl font-extrabold text-sky-400">100%</div>
+                    <div class="text-xs text-slate-400 mt-1 font-medium uppercase tracking-wider">Placement Support</div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <div class="text-3xl font-extrabold text-indigo-400">500+</div>
+                    <div class="text-xs text-slate-400 mt-1 font-medium uppercase tracking-wider">Hiring Partners</div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <div class="text-3xl font-extrabold text-purple-400">10,000+</div>
+                    <div class="text-xs text-slate-400 mt-1 font-medium uppercase tracking-wider">Alumni Network</div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <div class="text-3xl font-extrabold text-emerald-400">4.9 ★</div>
+                    <div class="text-xs text-slate-400 mt-1 font-medium uppercase tracking-wider">Student Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-20 bg-slate-900/50 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-extrabold text-white">Popular Job-Oriented Courses</h2>
+                <p class="text-slate-400 mt-3 text-sm">Real-world practical curriculum with dedicated mentorship</p>
+
+                <!-- Course Filters -->
+                <div class="flex justify-center gap-2 mt-8 flex-wrap">
+                    <button class="filter-btn active px-5 py-2 rounded-full text-xs font-semibold bg-indigo-600 text-white transition" data-category="all">All Courses</button>
+                    <button class="filter-btn px-5 py-2 rounded-full text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition" data-category="dev">Development</button>
+                    <button class="filter-btn px-5 py-2 rounded-full text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition" data-category="data">Data & AI</button>
+                    <button class="filter-btn px-5 py-2 rounded-full text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition" data-category="testing">Testing</button>
+                </div>
+            </div>
+
+            <!-- Course Cards Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="course-card glass-card rounded-2xl p-6 flex flex-col justify-between" data-category="dev">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-sky-500/10 text-sky-400 border border-sky-500/20 text-[11px] font-bold px-3 py-1 rounded-full">Development</span>
+                            <i class="fab fa-java text-2xl text-sky-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Java Full Stack Development</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Master Core & Advanced Java, Spring Boot, Microservices, React JS, and REST APIs with live projects.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between text-xs text-slate-400 border-t border-slate-800 pt-4 mb-4">
+                            <span><i class="far fa-clock text-sky-400 mr-1"></i> 6 Months</span>
+                            <span><i class="fas fa-briefcase text-sky-400 mr-1"></i> 100% Support</span>
+                        </div>
+                        <button onclick="openModal('Java Full Stack')" class="w-full bg-slate-800 hover:bg-indigo-600 text-white py-2.5 rounded-xl font-semibold text-xs transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="course-card glass-card rounded-2xl p-6 flex flex-col justify-between" data-category="data">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-[11px] font-bold px-3 py-1 rounded-full">Data & AI</span>
+                            <i class="fab fa-python text-2xl text-indigo-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Python & Data Science</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Learn Python, Data Analysis, Machine Learning, Deep Learning, SQL, and PowerBI analytics tools.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between text-xs text-slate-400 border-t border-slate-800 pt-4 mb-4">
+                            <span><i class="far fa-clock text-indigo-400 mr-1"></i> 5 Months</span>
+                            <span><i class="fas fa-briefcase text-indigo-400 mr-1"></i> High Growth</span>
+                        </div>
+                        <button onclick="openModal('Python Data Science')" class="w-full bg-slate-800 hover:bg-indigo-600 text-white py-2.5 rounded-xl font-semibold text-xs transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="course-card glass-card rounded-2xl p-6 flex flex-col justify-between" data-category="testing">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-purple-500/10 text-purple-400 border border-purple-500/20 text-[11px] font-bold px-3 py-1 rounded-full">Testing</span>
+                            <i class="fas fa-bug text-2xl text-purple-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Software Testing Master Class</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Comprehensive coverage of Manual Testing, Selenium Automation with Java, API Testing, & JIRA.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between text-xs text-slate-400 border-t border-slate-800 pt-4 mb-4">
+                            <span><i class="far fa-clock text-purple-400 mr-1"></i> 4 Months</span>
+                            <span><i class="fas fa-briefcase text-purple-400 mr-1"></i> Placement Drive</span>
+                        </div>
+                        <button onclick="openModal('Software Testing')" class="w-full bg-slate-800 hover:bg-indigo-600 text-white py-2.5 rounded-xl font-semibold text-xs transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Advantage Section -->
+    <section id="features" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-sky-400 font-semibold text-xs uppercase tracking-widest">Why Choose Us</span>
+                <h2 class="text-3xl font-extrabold text-white mt-2 mb-6">Learn Smarter With Our AI Integrated Ecosystem</h2>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-lg bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 shrink-0 mt-1">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-white">24/7 AI Doubt Resolver</h4>
+                            <p class="text-slate-400 text-sm mt-1">Get instant answers and code corrections while practicing at home, anytime.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0 mt-1">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-white">AI Resume & Mock Interviews</h4>
+                            <p class="text-slate-400 text-sm mt-1">Automated resume grading and AI interview preparation tailored for top companies.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0 mt-1">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-white">Real Industrial Projects</h4>
+                            <p class="text-slate-400 text-sm mt-1">Work on live production-grade applications under expert senior developers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl border border-slate-700/60 relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-indigo-500/20 rounded-full blur-2xl"></div>
+                <h3 class="text-xl font-bold text-white mb-4">Live Placement Drives</h3>
+                <p class="text-slate-400 text-sm mb-6">Our dedicated placement cell conducts weekly interview drives with IT giants.</p>
+
+                <div class="space-y-3">
+                    <div class="bg-slate-900/80 p-3.5 rounded-xl border border-slate-800 flex items-center justify-between text-xs">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 rounded-full bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold">TCS</div>
+                            <div>
+                                <div class="font-semibold text-white">Full Stack Engineer</div>
+                                <div class="text-slate-500">Placed: 14 Students</div>
+                            </div>
+                        </div>
+                        <span class="text-emerald-400 font-semibold">6.5 LPA</span>
+                    </div>
+
+                    <div class="bg-slate-900/80 p-3.5 rounded-xl border border-slate-800 flex items-center justify-between text-xs">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 rounded-full bg-sky-500/10 text-sky-400 flex items-center justify-center font-bold">INF</div>
+                            <div>
+                                <div class="font-semibold text-white">Data Analyst</div>
+                                <div class="text-slate-500">Placed: 9 Students</div>
+                            </div>
+                        </div>
+                        <span class="text-emerald-400 font-semibold">7.2 LPA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-slate-900/40 border-t border-slate-800/80">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl font-extrabold text-white text-center mb-8">Frequently Asked Questions</h2>
+            
+            <div class="space-y-4">
+                <div class="glass-card rounded-xl overflow-hidden">
+                    <button class="faq-btn w-full p-5 text-left font-semibold text-white flex justify-between items-center text-sm">
+                        <span>Do I need prior coding knowledge to join?</span>
+                        <i class="fas fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden px-5 pb-5 text-slate-400 text-sm">
+                        No! All our courses start from absolute scratch. We teach programming fundamentals before moving to advanced topics.
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-xl overflow-hidden">
+                    <button class="faq-btn w-full p-5 text-left font-semibold text-white flex justify-between items-center text-sm">
+                        <span>How does 100% Placement Support work?</span>
+                        <i class="fas fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden px-5 pb-5 text-slate-400 text-sm">
+                        We assist you with resume building, mock interviews, aptitude training, and line up unlimited interview calls until you land a job.
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-xl overflow-hidden">
+                    <button class="faq-btn w-full p-5 text-left font-semibold text-white flex justify-between items-center text-sm">
+                        <span>Are online or offline classes available?</span>
+                        <i class="fas fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden px-5 pb-5 text-slate-400 text-sm">
+                        We offer both Live Interactive Online Batches and Classroom Batches at our academy centers.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry Form Section -->
+    <section id="contact" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="glass-card p-8 sm:p-12 rounded-3xl max-w-2xl mx-auto relative border border-slate-700/80">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-extrabold text-white">Enroll or Book Free Demo</h2>
+                <p class="text-slate-400 text-sm mt-2">Fill in your details and our team will get back to you within 2 hours.</p>
+            </div>
+
+            <form id="enrollForm" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Full Name</label>
+                    <input type="text" id="name" placeholder="John Doe" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500 transition">
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="+91 98765 43210" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500 transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Interested Course</label>
+                        <select id="courseSelect" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500 transition">
+                            <option value="Java Full Stack">Java Full Stack Development</option>
+                            <option value="Python Data Science">Python & Data Science</option>
+                            <option value="Software Testing">Software Testing</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-500 text-white font-semibold py-3.5 rounded-xl text-sm shadow-lg hover:shadow-indigo-500/25 transition">
+                    Submit Inquiry
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-slate-950 py-8 text-center text-slate-500 text-xs">
+        <p>© 2026 Kiran Academy. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Course Modal -->
+    <div id="courseModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md hidden items-center justify-center z-50 p-4">
+        <div class="glass-card max-w-lg w-full p-6 rounded-2xl border border-slate-700 relative">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+                <i class="fas fa-times text-lg"></i>
+            </button>
+            <h3 id="modalTitle" class="text-2xl font-bold text-white mb-2"></h3>
+            <p class="text-slate-400 text-sm mb-4">Detailed course syllabus and career path information.</p>
+            <ul class="text-slate-300 text-xs space-y-2 mb-6">
+                <li>✔ Live Hands-on Coding Projects</li>
+                <li>✔ Resume Building & Mock Interviews</li>
+                <li>✔ Direct Referral to 500+ Partner Companies</li>
+                <li>✔ Course Completion Certificate</li>
+            </ul>
+            <a href="#contact" onclick="closeModal()" class="block text-center bg-indigo-600 text-white py-2.5 rounded-xl font-semibold text-xs">
+                Apply For This Course
+            </a>
+        </div>
+    </div>
+
+    <!-- External Script File -->
+    <script src="day03.js"></script>
+</body>
+</html>
